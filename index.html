@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Build a Survey Form</title>
+  </head>
+    <body>
+      <div class="form-card">
+      <h1 id="title">Build a Survey Form</h1>
+      <p id="description">Short explanation of a Survey Form</p>
+
+      <form id="survey-form">
+        <label id="name-label">Your Name <input id="name" type="text" placeholder="Maria Ramos" required >
+        </label>
+        <label id="email-label">Your Email <input id="email" type="email" placeholder="me@email.com" required></label>
+          <label id="number-label">Your Number <input id="number" max="50" min="1" placeholder="01" type="number" required></label>
+          <select id="dropdown">
+            <option>How to contact you</option>
+            <option>Contact by Phone</option>
+            <option>Contact by E-mail</option>
+            </select>
+            <label for="should-i">Should I
+            <input name="should-i" value="stay" type="radio">Stay
+            <input name="should-i" value="go" type="radio">Go</label>
+            
+            
+            <label for="colors">Colors You Like:
+            <input id="colors" value="red" type="checkbox">Red
+            <input id="colors" value="blue" type="checkbox">Blue
+            <input id="colors" value="green" type="checkbox">Green
+            <input id="colors" value="orange" type="checkbox">Orange</label>
+            <label for="more">More About You 
+              <textarea id="more"placeholder="What else do you like?" rows="10" cols="30"></textarea>
+            </label>            <button id="submit">Submit Form</button>
+
+
+
+      </form>
+      </div>
+
+    </body>
+    </html>
