@@ -39,33 +39,10 @@
   
   .form-card {
     margin: 10rem auto;
-    max-width: 60rem;
-    min-width: 30rem;
+    width: min(60rem, 95%);
     padding: 3rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-  }
-  
-  @media (max-width: 30em) {
-    label,
-    select,
-    textarea {
-      margin: 0 auto;
-      text-align: center;
-     }
-  
-    input[type=text], 
-    input[type=email],
-    input[type=number] {
-      display: block;
-      margin: 0.5rem auto 0;
-      text-align: center;
-     }
-  
-     textarea {
-       width: 100%;
-     }
-  
   }
   
   
@@ -135,4 +112,26 @@
   textarea:hover,
   #dropdown:hover {
     box-shadow: var(--inner-shadow);
+  }
+
+  @media (max-width: 30em) {
+    label,
+    select,
+    textarea {
+      margin: 0 auto;
+      text-align: center;
+     }
+  
+    input[type=text], 
+    input[type=email],
+    input[type=number] {
+      display: block;
+      margin: 0.5rem auto 0;
+      text-align: center;
+     }
+  
+     textarea {
+       width: 100%;
+     }
+  
   }
